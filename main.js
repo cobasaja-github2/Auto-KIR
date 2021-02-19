@@ -119,7 +119,7 @@ function update() {
 function hapus(nmLok) {
     console.log("function delete");
     console.log(nmLok);
-    document.getElementById("Confirm-Body").innerHTML = "<p>Anda yakin ingin menghapus data Lokasi " + nmLok + "?</P><input type=\'hidden\' id=\'idDel\'>";
+    document.getElementById("Confirm-Body").innerHTML = "Anda yakin ingin menghapus data Lokasi " + nmLok + "?<input type=\'hidden\' id=\'idDel\'>";
     document.getElementById("idDel").value = nmLok;
     $("#Confirm").modal("show");
     return false;
