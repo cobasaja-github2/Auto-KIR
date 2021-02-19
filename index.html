@@ -42,7 +42,6 @@
 
         <div class="tab-pane fade" id="pills-lokasi" role="tabpanel" aria-labelledby="pills-lokasi-tab">
 
-
             <div class="input-group input-group-sm mb-3">
                 <input type="text" id="inpLokasi" class="form-control" aria-label="Small"
                     aria-describedby="inputGroup-sizing-sm" placeholder="Nama Lokasi">
@@ -59,7 +58,6 @@
             <table class="table table-hover table-sm">
                 <thead>
                     <tr class="table-dark">
-                        <!-- <th scope="col">Kode</th> -->
                         <th scope="col">Nama</th>
                         <th scope="col">Aksi</th>
                     </tr>
@@ -69,14 +67,37 @@
         </div>
     </div>
 
+    <!-- Modal Alert-->
+    <div class="modal fade" id="Notif" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-body" id="Notif-Body">
+                    ... sdsdsd
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Modal Alert-->
 
-
-
-
-
-
-
-
+    <!-- Modal Confirm-->
+    <div class="modal fade" id="Confirm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-body" id="Confirm-Body">
+                    ... sdsdsd
+                    <input type="text" id="idDel">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="doHapus()" class="btn btn-danger btn-sm">OK</button>
+                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Modal Confirm-->
 
     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
