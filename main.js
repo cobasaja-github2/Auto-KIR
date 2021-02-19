@@ -119,16 +119,16 @@ function update() {
 function hapus(nmLok) {
     console.log("function delete");
     console.log(nmLok);
-    document.getElementById("Confirm-Body").innerHTML = "Anda yakin ingin menghapus data Lokasi?";
+    document.getElementById("Konf-Body").innerHTML = "Anda yakin ingin menghapus data Lokasi " + nmLok + "?<input type=\'hidden\' id=\'idDel\'>";
     document.getElementById("idDel").value = nmLok;
-    $("#Confirm").modal("show");
+    $("#Konf").modal("show");
     return false;
 };
 
 function doHapus() {
     console.log("function doHapus");
     var nmLok = document.getElementById("idDel").value;
-    $("#Confirm").modal("hide");
+    $("#Konf").modal("hide");
     ref.child(nmLok).set(null);
     document.getElementById("Notif-Body").innerHTML = "Data Lokasi " + nmLok + " berhasil dihapus";
     $("#Notif").modal("show");
