@@ -119,8 +119,8 @@ function update() {
 function hapus(nmLok) {
     console.log("function delete");
     console.log(nmLok);
-    document.getElementById("idDel").value = nmLok;
     document.getElementById("Confirm-Body").innerHTML = "Anda yakin ingin menghapus data Lokasi?";
+    document.getElementById("idDel").value = nmLok;
     $("#Confirm").modal("show");
     return false;
 };
